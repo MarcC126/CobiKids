@@ -1,0 +1,167 @@
+html{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-sizing: border-box; /*Especifica que va a descontar cada medida del total de la medida del objeto, sin aumentar*/
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+/*Inicio del Encabezado*/
+#encabezado{        /*Encabezado*/
+    height: auto;
+    width: inherit;
+    background-color: #49DF75;
+    border-bottom: 3px groove #3BB65F;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{  /*Modifica el logo de la parte superior izquierda*/
+    float: left;
+    padding: 5px 0 5px 40px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;      /*Fuente CobiKids Logo*/
+    color: white;
+}
+
+nav{    /*Modifica el menú de navegación del botón de la parte superior derecha en el encabezado*/
+    float: right;
+    height: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+nav ul{
+    padding: 0px 20px 5px 0;
+}
+
+nav ul il{
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+nav ul il a{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+nav ul il a:hover{
+    color: black;
+    border-radius: 15px;
+    background-color: #C5FCC5;
+}
+
+/*Termino del Encabezado*/
+
+/*Inicio del cuerpo de la página web*/
+
+body{
+    background-image: url(../../img/n3/Crayones.jpg);
+}
+
+#principal{     /*Se definen tamaños de la caja donde se alojara el menú*/
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#menu{  /*Se dan medidas al menú donde se ubican los temas*/
+    height: auto;
+    width: auto;
+    margin: 30px 60px 20px;
+    border-radius: 25px;
+    border: 5px #49DF75 solid;
+    background-color: #F5FCFB;
+    padding: 0px 10px 10px;
+    position: absolute;
+    
+}
+
+.instruccion h2{    /*Instrucción del menú*/
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #49DF75;
+    margin: 0px -10px 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    color: whitesmoke;
+}
+
+#temas{ /*Caja interna del menú donde se ubican las cajas de cada tema*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leccion{   /*Caja de las lecciones*/
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    position: relative;
+    margin: 0px 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.leccion > .img-l {     /*Parte de la caja donde se ubica la imagen*/
+    background-color: #FBCDCD;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.leccion > .titulo-l {      /*Parte de la caja donde se ubica el texto*/
+    background-color: #467153;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: .9;
+}
+
+.liga{      /*Texto de cada caja*/
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 20px 0px;
+}
+
+
+.liga:hover{
+    background-color: #C5FCC5;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+img{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

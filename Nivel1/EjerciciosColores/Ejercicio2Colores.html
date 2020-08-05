@@ -1,0 +1,48 @@
+<HTML>
+    <HEAD>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" type="text/css" href="../../css/Nivel1/EjerciciosColores/EjerciciosColoresFormato.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../../iconos/juguete.png">    <!--Icono Temporal para la pestaña-->
+        <title>Ejercicio 2</title>
+    </HEAD>
+    <BODY>
+        <header id="encabezado">    <!-- Crea el encabezado -->
+            <a id="logo">CobiKids</a>    <!-- Crea el logo del encabezado -->
+            <nav>   <!--Menú de navegación parte superior derecha-->
+                <ul>
+                    <il><a href="#"></a></il>    <!--Botón Regresar-->
+                </ul>
+            </nav>
+        </header>
+            <div class="principal">
+            <form action="EjercicioColores2.php" class="menu">
+                <p id="instruccion">Selecciona la respuesta correcta según el audio.</p>
+                <div id="audio">
+                    <audio src="../../audios/n1/gris.mp3" controls></audio>
+                </div>
+            <div class="contenido">
+                <div class="opciones">
+                    <div class="img1">
+                        <input type="radio" name="respuestas" value="R1" id="R1" required> 
+                        <label for="R1"><img id="img1" src="../../img/n1/crayon-g.png"></label>
+                    </div>
+                    
+                    <div class="img2">
+                        <input type="radio" name="respuestas" value="R2" id="R2" required>
+                        <label for="R2"><img id="img2" src="../../img/n1/crayon-orange.png"></label>
+                    </div>
+                    
+                    <div class="img3">
+                        <input type="radio" name="respuestas" value="R3" id="R3" required>
+                        <label for="R3"><img id="img3" src="../../img/n1/crayon-purple.png"></label>
+                    </div>
+                </div>
+            </div>
+            <input id="boton" type="submit" value="Siguiente"/>
+            </form>
+        </div>
+    </BODY>
+</HTML>

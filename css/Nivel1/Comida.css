@@ -1,0 +1,154 @@
+html{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-sizing: border-box; /*Especifica que va a descontar cada medida del total de la medida del objeto, sin aumentar*/
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+/*Inicio del Encabezado*/
+#encabezado{        /*Encabezado*/
+    height: auto;
+    width: inherit;
+    background-color: #b605ce;
+    border-bottom: 3px groove #3BB65F;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{  /*Modifica el logo de la parte superior izquierda*/
+    float: left;
+    padding: 5px 0 5px 40px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;      /*Fuente CobiKids Logo*/
+    color: white;
+}
+
+nav{    /*Modifica el menú de navegación del botón de la parte superior derecha en el encabezado*/
+    float: right;
+    height: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+nav ul{
+    padding: 0px 20px 5px 0;
+}
+
+nav ul il{
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+nav ul il a{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+nav ul il a:hover{
+    color: black;
+    border-radius: 15px;
+    background-color: #e959fd;
+}
+
+/*Termino del Encabezado*/
+
+/*Inicio del cuerpo de la página web*/
+.principal{     /*Contenedor principal*/
+    height: auto;
+    width: auto;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15%;
+}
+
+.menu{  /*Menú que muestra la información principal*/
+    height: auto;
+    width: 70%;
+    margin-bottom: 20px;
+    position: absolute;
+    border-radius: 25px;
+    border: 5px #b605ce solid;
+    background-color: white;
+    padding: 0px 0px 10px;
+}
+
+#instruccion{   /*Instrucción "Lee con atención"*/
+    padding: 10px 0px 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 30;
+    font-weight: bold;
+    background-color: #e959fd;
+    color: white;
+}
+
+#oracion{   /*"Los adjetivos."*/
+    padding: 10px 0px 10px 30px;
+    font-size: 20;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px #e959fd solid;
+    box-shadow: 6px 6px 0px #e959fd;
+}
+
+.contenido{ /*Contenedor que almacena el contenedor de la imagen*/
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+video{
+    height: auto; 
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 20px;
+    outline: rgba(0,0,0,0); /*Sirve para evitar que el vídeo se seleccione en azul*/
+}
+
+#fuente{    /*Bibliografía*/
+    text-align: center;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+}
+
+#boton{     /*Modifica las características del botón*/
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #b605ce;
+    color: white;
+    float: right;
+    text-decoration: none;
+}
+
+#boton:hover{
+    background-color: #e959fd;
+    color: black;
+}
+/*Fin del cuerpo de la página web*/

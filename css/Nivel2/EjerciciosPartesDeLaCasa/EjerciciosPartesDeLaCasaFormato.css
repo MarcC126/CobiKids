@@ -1,0 +1,224 @@
+html{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-sizing: border-box; /*Especifica que va a descontar cada medida del total de la medida del objeto, sin aumentar*/
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+/*Inicio del Encabezado*/
+#encabezado{        /*Encabezado*/
+    height: auto;
+    width: inherit;
+    background-color: #FCC143;
+    border-bottom: 3px groove #FCC143;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{  /*Modifica el logo de la parte superior izquierda*/
+    float: left;
+    padding: 5px 0 5px 40px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;      /*Fuente CobiKids Logo*/
+    color: white;
+}
+
+nav{    /*Modifica el menú de navegación del botón de la parte superior derecha en el encabezado*/
+    float: right;
+    height: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+nav ul{
+    padding: 0px 20px 5px 0;
+}
+
+nav ul il{
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+nav ul il a{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+nav ul il a:hover{
+    color: black;
+    border-radius: 15px;
+    background-color: #FCC143;
+}
+
+/*Termino del Encabezado*/
+
+/*Inicio del cuerpo de la página web*/
+.principal{
+    height: auto;
+    width: auto;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15%;
+}
+
+.menu{
+    height: auto;
+    width: 70%;
+    margin-bottom: 15px;
+    position: absolute;
+    border-radius: 25px;
+    border: 5px #FCC143 solid;
+    background-color: white;
+    padding: 0px 0px 10px;
+}
+
+#instruccion{
+    padding: 10px 0px 10px 30px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 30;
+    font-weight: bold;
+    background-color: #FCC143;
+    color: white;
+    margin: auto;
+}
+
+#oracion{
+    padding: 10px 0px 10px 30px;
+    font-size: 20;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px #FCC143 solid;
+    box-shadow: 6px 6px 0px #FCC143;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.imagen{
+    display: flex;
+    align-self: center;
+    height: 260px;
+    width: auto;
+    margin-left: 25px;
+    border-radius: 21px;
+    border: 2px #FCC143 solid;
+    box-shadow: 6px 6px 0px #FCC143;
+    background-color: white
+}
+
+img{
+    height: inherit;
+    width: 265px;
+    border-radius: 20px;
+}
+
+.opciones{
+    margin-top: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: auto;
+    width: auto;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    font-size: 20;
+}
+
+.respuestas{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+.opciones input[type="radio"]{
+    display: none;
+}
+
+.opciones .respuestas label{
+    color: black;
+    padding: 5px; 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.opciones .respuestas label:hover{
+    background-color: rgba(201, 242, 195, .4);
+    border-radius: 5px;
+}
+
+.opciones .respuestas label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #767676;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: 7px;
+}
+
+.opciones input[type="radio"]:checked + label{
+    padding: 5px 15px;
+    background-color: #FCC143;
+    border-radius: 2px;
+    color: white;
+}
+
+.opciones input[type="radio"]:checked + label:before{
+    display: none;
+}
+
+
+#boton{     /*Modifica las características del botón*/
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #FCC143;
+    color: white;
+    float: right;
+    text-decoration: none;
+}
+
+#boton:hover{
+    background-color: #FCC143;
+    color: black;
+}
+/*Fin del cuerpo de la página web*/

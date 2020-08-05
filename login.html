@@ -1,0 +1,28 @@
+<HTML>
+    <HEAD>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="iconos/juguete.png">    <!--Icono Temporal para la pestaña-->
+        <title>Iniciar sesión</title>
+    </HEAD>
+    <BODY>
+        <div class="contenedor">
+    		<div class="loginBox"><!--Cuadro de entrada inicio sesión-->
+				<img src="img/LogoCobiKidsP6.jpg" class="user">
+				<h2>Iniciar Sesión</h2>
+				<form method="POST" action="validar.php">
+                    <p id="usuario">Usuario:</p>
+                    <input type="text" name="usuario" required="" placeholder="Juanitobanana12">
+					<p id="contraseña">Contraseña:</p>
+					<input type="password" name="clave" required=""  placeholder="Ingresa tu contraseña">
+                    <input type="submit" value="Envíar" ><!--boton inicio sesión-->
+					<a href="#" class="redireccionamiento redireccionamiento1">Olvidé mi contraseña</a>
+					<a href="#" class="redireccionamiento redireccionamiento2">Registrarme</a>
+            	</form>
+        	</div>
+    	</div>
+    </BODY>
+</HTML>

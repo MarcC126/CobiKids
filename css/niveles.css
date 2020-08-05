@@ -1,0 +1,207 @@
+html{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-sizing: border-box; /*Especifica que va a descontar cada medida del total de la medida del objeto, sin aumentar*/
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+/*Inicio del Encabezado*/
+#encabezado{        /*Encabezado*/
+    height: auto;
+    width: inherit;
+    background-color: #8EB3F3;
+    border-bottom: 3px groove #5B8FF0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{  /*Modifica el logo de la parte superior izquierda*/
+    float: left;
+    padding: 5px 0 5px 40px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;      /*Fuente CobiKids Logo*/
+    color: white;
+}
+
+nav{    /*Modifica el menú de navegación del botón de la parte superior derecha en el encabezado*/
+    float: right;
+    height: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+nav ul{
+    padding: 0px 20px 5px 0;
+}
+
+nav ul il{
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+nav ul il a{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+nav ul il a:hover{
+    color: black;
+    border-radius: 15px;
+    background-color: #E1EEF2;
+}
+
+/*Termino del Encabezado*/
+
+/*Inicio del cuerpo de la página web*/
+body{
+    background-image: url(../img/armandoBloques.jpg); /*Se coloca la imagen de fondo*/
+}
+
+#menu{  /*Menú de opciones*/
+    width: 450px;
+    margin: auto;
+    margin-top: 3%;
+    border: 5px solid #5B8FF0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBFEFF;
+}
+
+h2{ /*Instrucción*/
+    font-size: 35px;
+    width: inherit;
+    text-align: center;
+    background-color: #8EB3F3;
+    margin-bottom: 15px;
+}
+
+#menu a{    /*Instruccion general para el texto de los botones*/
+    text-decoration: none;
+    padding: 5px;
+}
+
+#ei, #n1, #n2, #n3 {    /*Modifica las cajas donde se alojan los botones*/
+    margin: 5px 0 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+#ei a{  /*Modifica el botón "Examen inicial"*/
+    background-color: #F69A97;
+    border: 2px solid #F33B35;
+    border-radius: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: black;
+}
+
+#ei a:hover{    /*Modifica el hover del botón "Examen inicial"*/
+    background-color: #F7CBCA;
+    border: 2px solid #F33B35;
+    color: white;
+}
+
+#n1 a{  /*Modifica el botón "Nivel 1"*/
+    background-color: #D0A7F9;
+    border: 2px solid #63279F;
+    border-radius: 15px;
+    padding-left: 110px;
+    padding-right: 110px;
+    color: black;
+}
+
+#n1 a:hover{    /*Modifica el hover del botón "Nivel 1"*/
+    background-color: #E4CDFB;
+    border: 2px solid #63279F;
+    color: white;
+}
+
+#n2 a{  /*Modifica el botón "Nivel 2"*/
+    background-color: #F5EF9C;
+    border: 2px solid #DADA00;
+    border-radius: 15px;
+    padding-left: 110px;
+    padding-right: 110px;
+    color: black;
+}
+
+#n2 a:hover{    /*Modifica el hover del botón "Nivel 2"*/
+    background-color: #FBF3CC;
+    border: 2px solid #DADA00;
+    color: white;
+}
+
+#n3 a{  /*Modifica el botón "Nivel 3"*/
+    background-color: #49DF75;
+    border: 2px solid #0FAB3D;
+    border-radius: 15px;
+    padding-left: 110px;
+    padding-right: 110px;
+    color: black;
+}
+
+#n3 a:hover{    /*Modifica el hover del botón "Nivel 3"*/
+    background-color: #8CF8AC;
+    border: 2px solid #0FAB3D;
+    color: white;
+}
+
+#n3{
+    margin-bottom: 20px;
+}
+/*Fin del cuerpo de la página web*/
+
+/*Inicio del footer*/
+#pie-pagina{        /*Especificaciones del footer*/
+    bottom: 0px;
+    height: 9%;
+    width: inherit;
+    position: fixed;
+    background-color: #8EB3F3;
+    border-top: 3px groove #5B8FF0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#contenido{
+    float: right;
+    padding-top: 10px;
+    margin-right: 15px;
+}
+
+#contenido a{   /*Estilo a la etiqueta a del footer*/
+    cursor: no-drop;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#iconos{    /*Modifica la ubicación de los iconos de las redes sociales en el footer*/
+    float: left;
+    left: 0;
+    margin-top: -1px;
+}
+
+#iconos img{    /*Modifica los iconos de las redes sociales*/
+    border-radius: 20%;
+    margin-right: 20px;
+}
+/*Fin del footer*/
