@@ -28,7 +28,7 @@ html, body{
     font-weight: bolder;
     font-style: italic;
     font-family: "Comic Sans MS", cursive, sans-serif;      /*Fuente CobiKids Logo*/
-    color: white;
+    color: red;
 }
 
 nav{    /*Modifica el menú de navegación del botón de la parte superior derecha en el encabezado*/
